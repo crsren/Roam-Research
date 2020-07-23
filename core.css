@@ -873,7 +873,7 @@ body>.bp3-portal .bp3-text-small {
 .roam-center svg>g>foreignObject,
 #roam-right-sidebar-content>div svg>g>foreignObject {
     background-color: var(--page-color);
-    border-radius: 8px;
+    border-radius: 5px;
     filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, .05));
     border: 1px solid transparent;
 }
@@ -1561,4 +1561,46 @@ code {
 
 .rm-find-or-create-wrapper .bp3-transition-container {
     transform: none !important;
+}
+
+
+/* SIDE BAR */
+.roam-sidebar-container {
+    width: 250px !important;
+}
+
+.roam-sidebar-container {
+    padding: 40px 68px 50px 0px;
+}
+
+#roam-sidebar-logo {
+    display: none;
+}
+
+.starred-pages {
+    font-weight: 600 !important;
+}
+
+.starred-pages-wrapper {
+    display: block !important;
+}
+
+.shortcut {
+    display: none;
+}
+
+.roam-sidebar-container[style*="top: 0px"]+.roam-main {
+    padding-left: 185px;
+}
+
+.roam-sidebar-container .roam-sidebar-content .top-row:hover {
+    background-color: var(--bg-color) !important;
+}
+
+.roam-topbar {
+    margin-top: 40px;
+}
+
+.roam-topbar>div>.bp3-button:first-child {
+    top: 48px;
 }
