@@ -196,7 +196,7 @@ a {
 .roam-article>div {
     background: var(--page-color);
     /* position: relative; */
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .roam-article>div:first-child,
@@ -294,11 +294,11 @@ a {
 }
 
 #roam-right-sidebar-content>*>div:first-child {
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
 }
 
 #roam-right-sidebar-content>*>div:first-child:last-child {
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #roam-right-sidebar-content>*>div:last-child:not(:first-child) {
@@ -762,14 +762,14 @@ body>.bp3-portal .bp3-text-small {
 
 
 #find-or-create-input {
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
     font-size: 18px;
     padding: 20px 20px;
 }
 
 /* if input is empty (no menu) then use all-around border-radius*/
 #find-or-create-input[value=""] {
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 /* highlight around search box */
@@ -779,7 +779,7 @@ body>.bp3-portal .bp3-text-small {
 
 /* styling dropdown menu*/
 .rm-find-or-create-wrapper .bp3-popover {
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px 5px 5px;
     overflow: hidden;
     background: var(--page-color);
     backdrop-filter: blur(5px);
@@ -1123,7 +1123,7 @@ canvas[data-id="layer2-node"] {
 }
 
 .bp3-slider-handle {
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 /* CHECKBOX */
@@ -1184,7 +1184,7 @@ code {
     z-index: 99999 !important;
     background: rgb(var(--color-secondary), 0.7) !important;
     backdrop-filter: blur(5px);
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 2px 8px 8px 8px;
     box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.1)
 }
@@ -1275,14 +1275,14 @@ code {
 }
 
 .kanban-column {
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.05);
     padding: 0;
     overflow: hidden;
 }
 
 .kanban-card {
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.05);
 }
 
