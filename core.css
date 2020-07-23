@@ -417,13 +417,7 @@ a {
 /* -------------------------- */
 
 /* CLEAN UP SIDEBAR*/
-#flex-h-box {
-    display: none;
-}
 
-#roam-sidebar-logo {
-    display: none;
-}
 
 .roam-sidebar-content * {
     color: var(--icon-color) !important;
