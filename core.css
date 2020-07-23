@@ -150,11 +150,11 @@ a {
 
 /* SYNC */
 .rm-saving-icon .rm-synced {
-    background-color: rgba(var(--color-synced));
+    background-color: rgba(var(--color-synced)) !important;
 }
 
 .rm-saving-icon .rm-saving-remote {
-    background-color: rgba(var(--color-syncing));
+    background-color: rgba(var(--color-syncing)) !important;
 }
 
 /* set width and other attributes of pages */
