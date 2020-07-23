@@ -413,10 +413,14 @@ a {
 }
 
 /* -------------------------- */
-/*        LEFT SIDEBAR        */
+/*        CONTROL BAR        */
 /* -------------------------- */
 
-/* HIDE LOGO*/
+/* CLEAN UP SIDEBAR*/
+#flex-h-box {
+    display: none;
+}
+
 #roam-sidebar-logo {
     display: none;
 }
