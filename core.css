@@ -600,7 +600,7 @@ a {
 /* hovering search bar in this mode == hovering icon itself */
 /* we must however have the search bar in front of the icon (but invisible) so that it can focus on click */
 /* very hacky :P */
-.rm-find-or-create-wrapper[style*="200px"]:hover .bp3-icon-search,
+.rm-find-or-create-wrapper[style*="100px"]:hover .bp3-icon-search,
 .roam-topbar .bp3-icon-search:hover {
     background-color: rgba(var(--select-color), 0.4);
     color: var(--text-color) !important;
@@ -765,6 +765,7 @@ body>.bp3-portal .bp3-text-small {
 #find-or-create-input {
     border-radius: 10px 10px 0px 0px;
     font-size: 18px;
+    font-weight: bold;
     padding: 20px 20px;
 }
 
