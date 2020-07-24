@@ -1,5 +1,5 @@
 /* Mammut Theme */
-/* @import url('https://crsren.github.io/Roam-Research/mammut.css'); */
+/* @import url('https://crsren.github.io/Roam-Research/mammut-dark.css'); */
 
 @import url('https://crsren.github.io/Roam-Research/core.css');
 
@@ -13,6 +13,7 @@
 
     --bg-color: rgba(15, 18, 22);
     --page-color: rgba(25, 27, 30);
+  --select-color: rgba(45, 47, 50);
 
     --text-color: #e6e6e6;
     --icon-color: #e6e6e6;
@@ -21,13 +22,107 @@
 
     --color-primary: 100, 138, 237;
     --color-primary-contrast: #FFFFFF;
-    --color-secondary: 5, 76, 124;
+    --color-secondary:15, 86, 134;
 
     --color-secondary-contrast: #FFFFFF;
   
   
     --color-synced: rgba(96,196,96);
     --color-syncing: rgba(196, 96, 79);
+}
+
+/* SIDE BAR */
+
+.log-button:hover {
+  background-color: var(--select-color) !important;
+}
+
+.roam-topbar .bp3-icon-star::before {
+  color: var(--icon-color) !important;
+}
+
+.bp3-button.bp3-minimal.bp3-icon-menu-closed {
+  opacity: 1 !important;
+}
+
+.roam-sidebar-container {
+    width: 260px !important;
+}
+
+.roam-sidebar-container {
+    padding: 50px 68px 50px 0px;
+}
+
+#roam-sidebar-logo {
+    display: none;
+}
+
+.starred-pages {
+    font-weight: 600 !important;
+}
+
+.starred-pages-wrapper {
+  display: none,
+}
+
+.shortcut {
+    display: none;
+}
+
+.roam-sidebar-container[style*="top: 0px"]+.roam-main {
+    padding-left: 185px;
+}
+
+.roam-sidebar-container .roam-sidebar-content .top-row:hover {
+    background-color: var(--select-color) !important;
+}
+
+.roam-topbar {
+    margin-top: 40px;
+}
+
+.roam-topbar>div>.bp3-button:first-child {
+    top: 48px;
+}
+
+/* Custom Check-Box */
+
+.checkmark {
+  opacity: 1;
+  cursor: pointer;
+  position: absolute;
+  border: 1px solid black;
+  border-radius: var(--def-border-radius);
+}
+
+.checkmark:hover {
+    border: 1px solid black;
+  background-color: var(--bg-color);
+}
+
+.check-container .checkmark {
+    width: 12px;
+  	height: 12px;
+}
+.check-container input[checked] + .checkmark {
+  background-color: var(--page-color) !important;
+}
+.check-container .checkmark:after {
+  left: 3.5px;
+  top: 0.25px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(40deg) scale(0.8);
+}
+
+
+/* Modify left block border*/
+.block-border-left {
+ border-color: var(--page-color);
 }
 
 
@@ -41,50 +136,9 @@
 }
 
 
-/* Page Reference Legend */
+/* Linked/Unlinked references */
 strong {
-    color: var(--bullet-color) !important;
-}
-
-/* SIDE BAR */
-.roam-sidebar-container {
-    width: 250px !important;
-}
-
-.roam-sidebar-container {
-    padding: 40px 68px 50px 0px;
-}
-
-#roam-sidebar-logo {
-    display: none;
-}
-
-.starred-pages {
-    font-weight: 600 !important;
-}
-
-.starred-pages-wrapper {
-    display: block !important;
-}
-
-.shortcut {
-    display: none;
-}
-
-.roam-sidebar-container[style*="top: 0px"]+.roam-main {
-    padding-left: 185px;
-}
-
-.roam-sidebar-container .roam-sidebar-content .top-row:hover {
-    background-color: var(--bg-color) !important;
-}
-
-.roam-topbar {
-    margin-top: 40px;
-}
-
-.roam-topbar>div>.bp3-button:first-child {
-    top: 48px;
+    color: black !important;
 }
 
 /* Custom Code Mirror */
