@@ -1,5 +1,5 @@
 /* Mammut Theme */
-/* @import url('https://crsren.github.io/Roam-Research/mammut.css'); */
+/* @import url('https://crsren.github.io/Roam-Research/mammut-light.css'); */
 
 @import url('https://crsren.github.io/Roam-Research/core.css');
 
@@ -39,6 +39,7 @@
 /* SIDE BAR */
 
 .log-button:hover {
+  color: var(--text-color) !important;
   background-color: var(--select-color) !important;
 }
 
@@ -82,12 +83,17 @@
     background-color: var(--select-color) !important;
 }
 
+.starred-pages>a>.page:hover {
+  color: var(--text-color) !important;
+  background-color: var(--select-color) !important;
+}
+
 .roam-topbar {
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .roam-topbar>div>.bp3-button:first-child {
-    top: 48px;
+    top: 58px;
 }
 
 /* Custom Check-Box */
