@@ -767,7 +767,6 @@ body>.bp3-portal .bp3-text-small {
     font-size: 18px;
     font-weight: bold;
     padding: 20px 20px;
-    color: var(--bg-color);
 }
 
 /* if input is empty (no menu) then use all-around border-radius*/
