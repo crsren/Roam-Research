@@ -34,6 +34,7 @@
 /* SIDE BAR */
 
 .log-button:hover {
+  color: var(--text-color) !important;
   background-color: var(--select-color) !important;
 }
 
@@ -46,7 +47,7 @@
 }
 
 .roam-sidebar-container {
-    width: 260px !important;
+    width: 255px !important;
 }
 
 .roam-sidebar-container {
@@ -77,12 +78,17 @@
     background-color: var(--select-color) !important;
 }
 
+.starred-pages>a>.page:hover {
+  color: var(--text-color) !important;
+  background-color: var(--select-color) !important;
+}
+
 .roam-topbar {
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .roam-topbar>div>.bp3-button:first-child {
-    top: 48px;
+    top: 58px;
 }
 
 /* Custom Check-Box */
