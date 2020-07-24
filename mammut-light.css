@@ -1,33 +1,153 @@
+/* Mammut Theme */
+/* @import url('https://crsren.github.io/Roam-Research/mammut.css'); */
+
 @import url('https://crsren.github.io/Roam-Research/core.css');
 
 :root {
-
+      
     --page-width: 910px;
-    --page-order: row;
-    /* new pages to the left; row-reverse new pages to the right*/
+    --page-order: row; /* new pages to the left; row-reverse new pages to the right*/
 
     --header-font: "Source Sans Pro", "Inter", sans-serif;
     --body-font: "Source Sans Pro", "Inter", sans-serif;
 
-    --bg-color: rgba(240, 237, 237);
-    --page-color: rgba(255, 255, 255);
+    --bg-color: rgba(240,237,237);
+    --page-color: rgba(255,255,255);
+    --select-color: rgba(220,217,217);
 
     --text-color: #000000;
     --icon-color: #000000;
-    --bullet-color: rgba(230, 227, 227);
+    --bullet-color: rgba(230,227,227);
 
 
     --color-primary: 10, 96, 154;
     --color-primary-contrast: #FFFFFF;
-    --color-secondary: 110, 158, 217;
-
+    --color-secondary: 34, 136, 102;
     --color-secondary-contrast: #FFFFFF;
-
-    --color-synced: rgba(96, 196, 96);
+  
+  
+    --color-synced: rgba(96,196,96);
     --color-syncing: rgba(196, 96, 79);
+  
+   --def-border-radius: 10px;
 }
 
-/* Page Reference Legend */
-strong {
-    color: var(--bullet-color) !important;
+#find-or-create-input[value=""] {
+  border-radius: var(--def-border-radius);
 }
+
+/* SIDE BAR */
+
+.log-button:hover {
+  background-color: var(--select-color) !important;
+}
+
+.roam-topbar .bp3-icon-star::before {
+  color: var(--icon-color) !important;
+}
+
+.bp3-button.bp3-minimal.bp3-icon-menu-closed {
+  opacity: 1 !important;
+}
+
+.roam-sidebar-container {
+    width: 255px !important;
+}
+
+.roam-sidebar-container {
+    padding: 50px 68px 50px 0px;
+}
+
+#roam-sidebar-logo {
+    display: none;
+}
+
+.starred-pages {
+    font-weight: 600 !important;
+}
+
+.starred-pages-wrapper {
+  display: none,
+}
+
+.shortcut {
+    display: none;
+}
+
+.roam-sidebar-container[style*="top: 0px"]+.roam-main {
+    padding-left: 185px;
+}
+
+.roam-sidebar-container .roam-sidebar-content .top-row:hover {
+    background-color: var(--select-color) !important;
+}
+
+.roam-topbar {
+    margin-top: 40px;
+}
+
+.roam-topbar>div>.bp3-button:first-child {
+    top: 48px;
+}
+
+/* Custom Check-Box */
+
+.checkmark {
+  opacity: 1;
+  cursor: pointer;
+  position: absolute;
+  border: 1px solid black;
+  border-radius: var(--def-border-radius);
+}
+
+.checkmark:hover {
+    border: 1px solid black;
+  background-color: var(--bg-color);
+}
+
+.check-container .checkmark {
+    width: 12px;
+  	height: 12px;
+}
+.check-container input[checked] + .checkmark {
+  background-color: var(--page-color) !important;
+}
+.check-container .checkmark:after {
+  left: 3.5px;
+  top: 0.25px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(40deg) scale(0.8);
+}
+
+
+/* Modify left block border*/
+.block-border-left {
+ border-color: var(--page-color);
+}
+
+
+/* Sync Icon*/
+.rm-saving-icon .rm-synced {
+    background-color: var(--color-synced) !important;
+}
+
+.rm-saving-icon .rm-saving-remote {
+    background-color: var(--color-syncing) !important;
+}
+
+
+/* Linked/Unlinked references */
+strong {
+    color: black !important;
+}
+
+/* Custom Code Mirror*/
+.CodeMirror { background: var(--bg-color) !important; color: var(--text-color) !important; }
+.CodeMirror-gutters { background: var(--bg-color); border-right: 1px solid var(--page-color); }
+.CodeMirror-linenumber { color: #AAAAAA !important; }
+
