@@ -427,7 +427,8 @@ a {
 }
 
 .starred-pages>a>.page:hover {
-    color: rgb(var(--primary-color)) !important;
+    /*color: rgb(var(--primary-color)) !important;*/
+    background-color: var(--select-color);
 }
 
 .log-button * {
