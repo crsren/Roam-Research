@@ -61,6 +61,12 @@ h1.rm-title-display,
     color: var(--text-color) !important;
 }
 
+.bp3-button.bp3-minimal:hover::before,
+.bp3-button.bp3-minimal:hover *,
+.bp3-button.bp3-minimal:hover *::before {
+    transform: scale(1.2) !important;
+}
+
 .bp3-button.bp3-minimal::before,
 .bp3-button.bp3-minimal *,
 .bp3-button.bp3-minimal *::before {
@@ -407,11 +413,6 @@ a {
     left: 4px !important;
 }
 
-.roam-topbar .bp3-icon-menu-open::before {
-    content: "";
-    /* prevent menu icon from changing on hover */
-}
-
 /* -------------------------- */
 /*        LEFT SIDEBAR        */
 /* -------------------------- */
@@ -520,13 +521,6 @@ a {
     padding-left: 250px;
 }
 
-/* separator between "ALL PAGES" and "SHORTCUTS" */
-.starred-pages-wrapper>div[style*="background"] {
-    background: var(--icon-color) !important;
-    opacity: 0.5;
-}
-
-
 /* fix height with absolute positioning of email address */
 .roam-sidebar-content>.flex-h-box {
     height: 40px;
@@ -610,6 +604,11 @@ a {
 .roam-topbar .bp3-icon-search:hover {
     background-color: rgba(var(--select-color), 0.4);
     color: var(--text-color) !important;
+}
+
+
+.bp3-icon-search:hover {
+    transform: scale(1.2) !important;
 }
 
 .roam-topbar .bp3-icon-search svg {
