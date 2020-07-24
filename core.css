@@ -38,9 +38,9 @@
 
 /* Sync Icon*/
 .rm-saving-icon .rm-synced {
-    background-color: var(--color-synced) !important;
+    background-color: rgb(var(--color-synced)) !important;
 }
 
 .rm-saving-icon .rm-saving-remote {
-    background-color: var(--color-syncing) !important;
+    background-color: rgb(var(--color-syncing)) !important;
 }
