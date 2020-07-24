@@ -2,16 +2,49 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-:root {
-    --color-synced: rgba(96, 196, 96);
-    --color-syncing: rgba(196, 96, 79);
+
+/* Page Reference Legend */
+strong {
+    color: var(--bullet-color) !important;
 }
 
-/* Sync Icon*/
-.rm-saving-icon .rm-synced {
-    background-color: var(--color-synced) !important;
+/* SIDE BAR */
+.roam-sidebar-container {
+    width: 250px !important;
 }
 
-.rm-saving-icon .rm-saving-remote {
-    background-color: var(--color-syncing) !important;
+.roam-sidebar-container {
+    padding: 40px 68px 50px 0px;
+}
+
+#roam-sidebar-logo {
+    display: none;
+}
+
+.starred-pages {
+    font-weight: 600 !important;
+}
+
+.starred-pages-wrapper {
+    display: block !important;
+}
+
+.shortcut {
+    display: none;
+}
+
+.roam-sidebar-container[style*="top: 0px"]+.roam-main {
+    padding-left: 185px;
+}
+
+.roam-sidebar-container .roam-sidebar-content .top-row:hover {
+    background-color: var(--bg-color) !important;
+}
+
+.roam-topbar {
+    margin-top: 40px;
+}
+
+.roam-topbar>div>.bp3-button:first-child {
+    top: 48px;
 }
