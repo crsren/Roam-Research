@@ -57,7 +57,7 @@ h1.rm-title-display,
 }
 
 .bp3-button.bp3-minimal:hover {
-    background: rgba(var(--color-primary), 0.4) !important;
+    background: rgba(var(--select-color), 0.4) !important;
     color: var(--text-color) !important;
 }
 
@@ -608,7 +608,7 @@ a {
 /* very hacky :P */
 .rm-find-or-create-wrapper[style*="200px"]:hover .bp3-icon-search,
 .roam-topbar .bp3-icon-search:hover {
-    background-color: rgba(var(--color-primary), 0.4);
+    background-color: rgba(var(--select-color), 0.4);
     color: var(--text-color) !important;
 }
 
