@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-:root {}
 
 /* Side Bar */
 .roam-sidebar-container {
@@ -35,4 +34,13 @@
 
 .roam-sidebar-container .roam-sidebar-content .top-row:hover {
     background-color: var(--bg-color) !important;
+}
+
+/* Sync Icon*/
+.rm-saving-icon .rm-synced {
+    background-color: var(--color-synced);
+}
+
+.rm-saving-icon .rm-saving-remote {
+    background-color: var(--color-syncing);
 }
