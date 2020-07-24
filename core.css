@@ -57,7 +57,7 @@ h1.rm-title-display,
 }
 
 .bp3-button.bp3-minimal:hover {
-    background: rgba(var(--select-color), 0.4) !important;
+    background: rgba(var(--color-primary), 0.4) !important;
     color: var(--text-color) !important;
 }
 
@@ -174,7 +174,7 @@ a {
 
 /* make blocks respect --page-width */
 .roam-block-container {
-    max-width: var(--page-width);
+    max-width: var(--page-width) !important;
 }
 
 *[style*="background-color: white"] {
