@@ -2,7 +2,7 @@
 
 ![](https://roamresearch.com/assets/astro.png)
 
-Based on https://azlen.github.io/roam-themes/ .
+Based on (https://azlen.github.io/roam-themes/)[https://azlen.github.io/roam-themes/] .
 
 ## Mammut
 
