@@ -1,5 +1,5 @@
 /* Mammut Theme */
-/* @import url('https://crsren.github.io/Roam-Research/mammut-light.css'); */
+/* @import url('https://crsren.github.io/Roam-Research/mammut.css'); */
 
 @import url('https://crsren.github.io/Roam-Research/core.css');
 
@@ -102,12 +102,12 @@
   opacity: 1;
   cursor: pointer;
   position: absolute;
-  border: 1px solid black;
+  border: 1px solid var(--text-color);
   border-radius: var(--def-border-radius);
 }
 
 .checkmark:hover {
-    border: 1px solid black;
+  border: 1px solid var(--text-color);
   background-color: var(--bg-color);
 }
 
@@ -123,7 +123,7 @@
   top: 0.25px;
   width: 5px;
   height: 10px;
-  border: solid black;
+  border: solid var(--text-color);
   border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -149,7 +149,7 @@
 
 /* Linked/Unlinked references */
 strong {
-    color: black !important;
+    color: var(--icon-color) !important;
 }
 
 /* Custom Code Mirror*/
