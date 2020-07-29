@@ -1,5 +1,5 @@
 /* Mammut Theme */
-/* @import url('https://crsren.github.io/Roam-Research/mammut.css'); */
+/* @import url('https://crsren.github.io/Roam-Research/mammut-dark.css'); */
 
 @import url('https://crsren.github.io/Roam-Research/core.css');
 
@@ -11,29 +11,24 @@
     --header-font: "Source Sans Pro", "Inter", sans-serif;
     --body-font: "Source Sans Pro", "Inter", sans-serif;
 
-    --bg-color: rgba(240,237,237);
-    --page-color: rgba(255,255,255);
-    --select-color: rgba(220,217,217);
+    --bg-color: rgba(15, 18, 22);
+    --page-color: rgba(25, 27, 30);
+  --select-color: rgba(45, 47, 50);
 
-    --text-color: #000000;
-    --icon-color: #000000;
+    --text-color: #e6e6e6;
+    --icon-color: #e6e6e6;
     --bullet-color: rgba(230,227,227);
 
 
-    --color-primary: 10, 96, 154;
+    --color-primary: 100, 138, 237;
     --color-primary-contrast: #FFFFFF;
-    --color-secondary: 34, 136, 102;
+    --color-secondary:15, 86, 134;
+
     --color-secondary-contrast: #FFFFFF;
   
   
     --color-synced: rgba(96,196,96);
     --color-syncing: rgba(196, 96, 79);
-  
-   --def-border-radius: 10px;
-}
-
-#find-or-create-input[value=""] {
-  border-radius: var(--def-border-radius);
 }
 
 /* SIDE BAR */
@@ -152,8 +147,28 @@ strong {
     color: var(--icon-color) !important;
 }
 
-/* Custom Code Mirror*/
+/* Custom Code Mirror */
 .CodeMirror { background: var(--bg-color) !important; color: var(--text-color) !important; }
-.CodeMirror-gutters { background: var(--bg-color); border-right: 1px solid var(--page-color); }
-.CodeMirror-linenumber { color: #AAAAAA !important; }
-
+div.CodeMirror-selected { background: var(--page-color) !important;  }
+.CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection { background: var(--page-color); }
+.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection, .CodeMirror-line > span > span::-moz-selection { background: rgba(68, 68, 119, .99); }
+.CodeMirror-gutters { background: var(--bg-color); border-right: 1px solid rgba(25, 27, 30); }
+.CodeMirror-guttermarker { color: var(--text-color) !important; }
+.CodeMirror-guttermarker-subtle { color: #bbb !important; }
+.CodeMirror-linenumber { color: #333333 !important; }
+.CodeMirror-cursor { border-left: 1px solid white !important; }
+span.cm-qualifier { color: #666666 !important; }
+span.cm-comment { color: #EE8811 !important; }
+span.cm-atom { color: #B58AFD !important; }
+span.cm-number, span.cm-attribute { color: #ffd500 !important; }
+span.cm-keyword { color: #599eff !important; }
+span.cm-string { color: #37f14a !important; }
+span.cm-meta { color: #369BFF !important; }
+span.cm-variable-2, span.cm-tag { color: #99b2ff !important; }
+span.cm-variable-3, span.cm-def, span.cm-type { color: white !important; }
+span.cm-bracket { color: #8da6ce !important; }
+span.cm-builtin, pan.cm-special { color: #ff9e59 !important; }
+span.cm-link { color: #845dc4 !important; }
+span.cm-error { color: #F41000 !important; }
+.CodeMirror-activeline-background { background: var(--page-color) !important; }
+.CodeMirror-matchingbracket { outline:1px solid grey !important; color:white !important; }
