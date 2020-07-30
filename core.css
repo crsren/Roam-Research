@@ -1564,3 +1564,14 @@ code {
 .rm-find-or-create-wrapper .bp3-transition-container {
     transform: none !important;
 }
+
+
+/* Redesigning Queries */
+.rm-query-title {
+    background-color: var(--page-color) !important;
+    color: var(--select-color) !important;
+}
+
+.rm-query {
+    border: 1.5px solid var(--bg-color);
+}
