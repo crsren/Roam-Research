@@ -97,7 +97,7 @@ a {
 }
 
 .roam-highlight {
-    background-color: rgba(var(--color-primary), 0.5);
+    background-color: rgba(var(--color-secondary), 0.4);
 }
 
 .rm-block-ref {
