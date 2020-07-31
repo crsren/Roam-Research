@@ -1578,7 +1578,7 @@ code {
 
 /* New theme variable to resize images in queries (e.g. for "bookshelf"*/
 .rm-zoom .parent-path-wrapper {
-    max-height: var(--query-img-size);
+    max-height: var(--query-img-size) !important;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1589,7 +1589,7 @@ code {
     flex-wrap: wrap;
     font-size: 12px;
     margin-left: 8px;
-    height: var(--query-img-size);
+    height: var(--query-img-size) !important;
 }
 
 .zoom-mentions-view .rm-inline-img {
@@ -1602,6 +1602,7 @@ code {
 }
 
 .rm-zoom .rm-inline-img {
+    max-width: var(--query-img-size) !important;
     max-height: var(--query-img-size) !important;
     max-width: var(--query-img-size) !important;
 }
