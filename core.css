@@ -1575,3 +1575,37 @@ code {
 .rm-query {
     border: 1.5px solid var(--bg-color);
 }
+
+/* New theme variable to resize images in queries (e.g. for "bookshelf"*/
+.rm-zoom .parent-path-wrapper {
+    max-height: var(--query-img-size);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.zoom-mentions-view {
+    display: flex;
+    /*  flex-wrap: wrap;*/
+    font-size: 12px;
+    margin-left: 8px;
+    height: var(--query-img-size);
+}
+
+.zoom-mentions-view .rm-inline-img {
+    max-height: var(--query-img-size) !important;
+    width: calc(var(--query-img-size)*0.7) !important;
+}
+
+.zoom-mentions-view .rm-mention-icon {
+    font-size: 8px;
+}
+
+.rm-zoom .rm-resize-img {
+    max-width: var(--query-img-size) !important;
+}
+
+.rm-zoom .rm-inline-img {
+    max-height: var(--query-img-size) !important;
+    max-width: var(--query-img-size) !important;
+}
