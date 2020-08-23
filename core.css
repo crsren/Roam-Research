@@ -477,7 +477,7 @@ a {
     width: 400px;
     height: 100vh;
     background: var(--bg-color) !important;
-    opacity: 0.7;
+    opacity: 0.8;
     z-index: -1;
 }
 
