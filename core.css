@@ -1,3 +1,49 @@
 /* Based on https://azlen.github.io/roam-themes */
 
 @import url('https://azlen.github.io/roam-themes/core.css');
+
+.bp3-button.bp3-minimal:hover {
+    background: rgba(var(--select-color), 0.4) !important;
+}
+
+.bp3-button.bp3-minimal:hover::before,
+.bp3-button.bp3-minimal:hover *,
+.bp3-button.bp3-minimal:hover *::before {
+    transform: scale(1.2) !important;
+}
+
+.roam-highlight {
+    background-color: rgba(var(--color-secondary), 0.4);
+}
+
+
+
+/* -------------------------- */
+/*        LEFT SIDEBAR        */
+/* -------------------------- */
+
+
+.starred-pages>a>.page:hover {
+    color: rgb(var(--text-color)) !important;
+    background-color: var(--select-color) !important;
+}
+
+.roam-sidebar-container>.roam-sidebar-content::before {
+    opacity: 0.8;
+}
+
+.rm-find-or-create-wrapper[style*="200px"]:hover .bp3-icon-search,
+.roam-topbar .bp3-icon-search:hover {
+    background-color: rgba(var(--select-color), 0.4);
+}
+
+
+.bp3-icon-search:hover {
+    transform: scale(1.2) !important;
+}
+
+
+/* Modify search bar*/
+#find-or-create-input:focus {
+    box-shadow: 0 0 0 2px var(--bg-color) !important;
+}
