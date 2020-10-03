@@ -197,3 +197,14 @@ div.CodeMirror-selected {
 .CodeMirror-guttermarker {
     color: var(--text-color) !important;
 }
+
+
+/* Redesigning Queries */
+.rm-query-title {
+    background-color: var(--page-color) !important;
+    color: var(--select-color) !important;
+}
+
+.rm-query {
+    border: 1px solid var(--bg-color);
+}
