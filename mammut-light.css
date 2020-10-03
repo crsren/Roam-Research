@@ -5,7 +5,7 @@
 
 :root {
       
-    --page-width: 910px;
+/*    default 616px --page-width: 910px;*/ 
     --page-order: row; /* new pages to the left; row-reverse new pages to the right*/
 
     --header-font: "Source Sans Pro", "Inter", sans-serif;
